@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body{
+    background:white;
+    padding: 0 200px;
+}
+.container{
+    position: relative;
+    background-color: rgba(0, 0, 0, .03);
+    border-radius: 15px;
+    padding:0 30px;
+}
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between; 
+    background-color: rgba(4, 47, 104, 0.993);
+    width:100%;
+    border-radius: 20px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.nav_item a{
+    text-decoration: none;
+    color: white;
+}
+.nav_item{
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    padding:0 40px;
+    font-weight:500;
+}
+.nav_item a:hover{
+    color: #233025;
+}
+.jov_name{
+    color: White;
+    list-style: none;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 800;
+    top: 0;
+    padding: 5px 40px;
+    margin: 0;
+}
+.home{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(16, 38, 100);
+    background-image: linear-gradient(to right, rgb(16, 38, 100), );
+}
+.img-container { 
+    position: relative;
+    width: fit-content; /* Adjust as needed */
+    display: inline-block;
+}
+.display_pic{
+    position: relative;
+    z-index: 1; /* Ensure the display pic is on top */
+    height: 600px;
+}
+.blob-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 450px;
+    z-index: 0; /* Ensure the blob background is behind */
+}
+.home h1{
+    font-family:Poppins;
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+    padding-top: 190px;
+    line-height: 1.2;
+}
+h1 .name{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    color: rgb(16, 38, 100);
+    font-size: 70px;
+}
+.about{
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-top: 2px;
+    color: white;
+    background-color: rgb(16, 38, 100);
+    padding: 20px;
+}
+.about p{
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.about h2{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.about h3{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about hr{
+    border: none;
+    background-color: rgba(3, 3, 65, 0.726);
+    height: 2px;
+}
+.portfolio{
+    border: 1px solid red;
+    color: navy;
+    font-family:"Roboto", sans-serif;
+    text-align: center
+}
+.project-container{   
+    display: inline-block;
+    background-color:rgb(16, 38, 100);
+    height: 400px;
+    width: 400px;
+    border: 1px solid red;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+.project-container:hover{
+    background-color: rgb(241, 241, 179);
+    padding: 5px;
+}
+.contact{
+    border: 1px solid red;
+    color: White;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(16, 38, 100);
+    margin-top: 2px;
+}
+.educ-container{
+    padding: 20px 0;
+    background-color: rgba(1, 0, 56, 0.452);
+    border-radius: 15px;
+}
+.timeline{
+    position: relative;
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+.t-container{
+    position: relative;
+    width: 50%;
+    z-index: 2;
+}
+.t-container:nth-child(1){
+    animation-delay: 0s;
+}
+.t-container:nth-child(2){
+    animation-delay: 1s;
+}
+.t-container:nth-child(3){
+    animation-delay: 3s;
+}
+.t-container:nth-child(4){
+    animation-delay: 4s;
+}
+.text-box{
+    position: relative;
+    font-size: 15px;
+    background-color: rgba(13, 13, 97, 0.637);
+    color: blanchedalmond;
+    margin: 10px 50px;
+    padding: 15px;
+    font-family: Poppins;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.text-box small{
+    font-size: 14px;
+    margin: 0;
+}
+.text-box h4{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+.text-box medium{
+    font-size: 17px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.t-container img{
+    position: absolute;
+    border-radius: 100%;
+    top: 20px;
+    z-index: 10;
+    box-shadow: 0 0px 8px rgba(16, 255, 243, 0.781);
+}
+.srlms-elem-img{
+    width: 40px;
+    right: -20px;
+}
+.srlms-jhs-img{
+    width: 45px;
+    left: -20px;
+}
+.olfu-img{
+    width: 50px;
+    right: -25px;
+}
+.ursm-img{
+    width: 55px;
+    left: -25px;
+}
+.timeline::after{
+    content:'';
+    margin-top: 60px;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(16, 255, 243, 0.781);
+    box-shadow: 0 0px 8px rgba(16, 255, 243, 0.781);
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgba(13, 13, 97, 0.637);
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgba(13, 13, 97, 0.637);
+    left: -15px;
+}
+#contact{
+    padding-left: 20px;
+}
+.socials{
+    list-style: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+.socials img{
+    height: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials img:hover{
+    padding: 5px;
+    cursor: pointer;
+}
+.socials li:hover{
+    color: rgb(236, 236, 174);
+}
+.socials a:hover{
+    color: rgb(236, 236, 174);
+}
+
+
+
+
+  
