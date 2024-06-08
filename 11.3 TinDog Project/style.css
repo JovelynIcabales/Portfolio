@@ -1,0 +1,70 @@
+.gradient-bg {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size:180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.btn-primary{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+.btn-primary img{
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+.btn-outline-secondary{
+    border-color: white;
+    color: white;
+}
+.btn-outline-secondary img{
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+.features{
+    padding: 48px 0px;
+}
+.features img{
+    height: 30px;
+}
+.icon-square{
+    padding: 5px;
+    border-radius: 10px;
+}
+#testimonial{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(248,249,259,1);
+}
+.tes-header{
+    padding: 48px 12px;
+}
+.tes-header h2{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+.tes-header img{
+    border-radius: 50%;
+    margin-bottom: 15px;
+    height: 100px;
+}
+.row-tes{
+    margin: 0px 100px;
+}
+.row-tes img{
+    height: 30px;
+}
+#pricing{
+    padding: 50px 80px;
+}
