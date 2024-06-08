@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Geist;
+    src: url(./fonts/Geist-Regular-BF6569491e3eff1.ttf)
+}
+*{
+    font-family: Geist;
+    font-size: 15px;
+}
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    position: fixed;
+    padding: 10px 0px;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1;
+    background-color: white;
+}
+#navbar a{
+    text-decoration: none;
+    color:rgba(0, 0, 20, 0.6);
+    padding: 0px 10px;
+}
+.nav{
+    align-items: center;
+}
+.navbar-section{
+    display: flex;
+    padding-left: 50px;
+    width: 100%;
+    justify-content:space-around;
+}
+.navbar-logo img{
+    display: inline-block;
+    height: 30px;
+}
+.navbar-logo p{
+    display: inline;
+    padding: 0px 5px;
+    font-weight: 700;
+}
+.navbar-items a:hover{
+    font-weight: bolder;
+}
+.nav-socials img{
+    height: 28px;
+}
+#Contact-me:hover{
+    font-weight: bolder;
+}
+#hero{
+    display:flex;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.hero-photo img{
+    position: relative;
+    height: 500px;
+}
+.hero-photo{
+    order: 2;
+}
+.hero-header{
+    position: relative;
+    order: 1;
+    letter-spacing: 2px;
+}
+.hero-header h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.hero-header p{
+    font-size: 25px;
+}
