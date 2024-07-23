@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Grandstander Font font-family: 'Grandstander', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fira Sans font-family: 'Fira Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="AllenPreset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Mang Inamerz</title>
+    <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+</head>
+
+<body class="primary" onload="startTime()" style="background-image: url(https://www.transparenttextures.com/patterns/brick-wall.png)">
+
+    <!-- 
+    HEADER/NAV
+     -->
+     <nav class=" navbar navbar-expand-lg fixed-top navbar-dark primary " aria-label=" Ninth navbar example"
+    style="min-height: 69px; font-family: 'Grandstander', cursive; background-image: url(https://www.transparenttextures.com/patterns/xv.png);">
+    <div class="container-xl align-items-center">
+        <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="index.html"> <img
+                src="resources/logo.png" alt="" style="height: 43px;"></a>
+        <!-- TOTAL -->
+        <div class="primary-container" style="padding: 7px; border-radius: 7px;">
+            Total =
+            <span id="total">₱0.00</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+            aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-items-center" id="navbarsExample07XL">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="menu.html" id="dropdown07XL" data-bs-toggle="dropdown"
+                        aria-expanded="false">Menu</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+                        <li><a class="dropdown-item" href="promos.html">Promos</a></li>
+                        <li><a class="dropdown-item" href="menu.html">View All Items</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+            <div class="d-flex flex-row align-items-center" style="column-gap: 12px; row-gap: 12px; opacity: 0.6;">
+                <div id="date"></div>
+                <div id="currentTime"></div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- MARGIN -->
+    <div style="margin-top: 96px;"></div>
+
+    <!--
+        ORDER
+    -->
+    <div class="d-flex flex-column justify-content-center align-items-center" style="gap: 27px;">
+        <!-- ROW -->
+        <div>
+            <h1> SELECT YOUR ORDERS </h1>
+        </div>
+
+        <!-- CATEGORY -->
+        <div class="container d-flex flex-column justify-content-center align-items-center primary-container"
+            style="padding: 17px;  border-radius: 7px; width: 95%;">
+            <!-- TITLE -->
+            <h3>PROMOS</h3>
+            <!-- ROW -->
+            <div class="d-flex flex-row flex-wrap justify-content-center align-items-start" style="gap: 17px;">
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/m1Meal.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">M1 Meal</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">1 Fried Rice
+                                            + 1 Royal + Tuna Sisig</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱185</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk1" type="checkbox" name="products" />
+                                    <label for="chk1">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/m2Meal.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">M2 Meal</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">1 Garlic Rice
+                                            + 1 sprite + 1 Pork Sisig</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱210</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk2" type="checkbox" name="products" />
+                                    <label for="chk2">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/m3Meal.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">M3 Meal</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all"> 1 Plain Rice
+                                            + 1 Coke + 1 Pakpak Large</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱280</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk3" type="checkbox" name="products" />
+                                    <label for="chk3">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/wadBundleMeals.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">WAD Bundle Meals</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">2 Pecho Large
+                                            + 1 Bangus Sisig + 1 Mango Cake + Free 1 Royal</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱815</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk4" type="checkbox" name="products" />
+                                    <label for="chk4">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/bestfriendMeals.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Best Friend Meals</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">2 Fried Rice
+                                            + 1 Tuna Sisig + 1 Pakpak Large + 2 Sprite</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱470</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk5" type="checkbox" name="products" />
+                                    <label for="chk5">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/coupleMeals.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Couple Meals</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">2 Fried Rice
+                                            + 1 Pork Sisig + 1 Paa Large + 2 Sprite + 1 Graham</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱690</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk6" type="checkbox" name="products" />
+                                    <label for="chk6">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/loveableMeals.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Loveable Meal</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">1 Pecho Large
+                                            + 1 Plain Rice + 1 Coke </p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱360</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk22" type="checkbox" name="products" />
+                                    <label for="chk22">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/onlineClassMeals.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Online Class Meals</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">1 Garlic Rice
+                                            + 1 Tuna Sisig + 1 Coke</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱190</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk23" type="checkbox" name="products" />
+                                    <label for="chk23">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/familySisigBox.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Family Sisig Box</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">1 Pork + 1
+                                            Bangus + 1 Tuna Sisig + Free Mango Cake</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱410</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk24" type="checkbox" name="products" />
+                                    <label for="chk24">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/promos/barkadaChickenBox.png"
+                                    alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Barkada Chicken Box</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">Paa + Pecho +
+                                            Pakpak Large + Free Cupcake</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱780</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk25" type="checkbox" name="products" />
+                                    <label for="chk25">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CATEGORY -->
+        <div class="container d-flex flex-column justify-content-center align-items-center primary-container"
+            style="padding: 17px;  border-radius: 7px; width: 95%;">
+            <!-- TITLE -->
+            <h3>MENU</h3>
+            <!-- ROW -->
+            <div class="d-flex flex-row flex-wrap justify-content-center align-items-start" style="gap: 17px;">
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/porkSisig.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Pork Sisig</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-wrap: break-word;">Hindi ka
+                                            magsisi sa pagbili, dahil sa sarap!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk7" type="checkbox" name="products" />
+                                    <label for="chk7">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/bangusSisig.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Bangus Sisig</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Wala kang tinik na matitikman!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱120</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk8" type="checkbox" name="products" />
+                                    <label for="chk8">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/tunaSisig.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Tuna Sisig</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; ">MaTUtulala ka sa sarap!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱80</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk9" type="checkbox" name="products" />
+                                    <label for="chk9">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/paaLarge.png" alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Paa Large</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; ">Sulit sa bulsa, walang sayang!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱280</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk10" type="checkbox" name="products" />
+                                    <label for="chk10">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/pechoLarge.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Pecho Large</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Lahat makakain, walang maiiwan!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk11" type="checkbox" name="products" />
+                                    <label for="chk11">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/pakpakLarge.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Pakpak Large</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">Mapapalipad
+                                            ka sa linamnam!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱180</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk12" type="checkbox" name="products" />
+                                    <label for="chk12">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/coke.png" alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Coke</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; ">Unang inom, kikiligin ka agad!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk13" type="checkbox" name="products" />
+                                    <label for="chk13">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/sprite.png" alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Sprite</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Puti man ang kulay, okay lang!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk14" type="checkbox" name="products" />
+                                    <label for="chk14">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/royal.png" alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Royal</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Kahit malamig, hindi ka iiwan!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk15" type="checkbox" name="products" />
+                                    <label for="chk15">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/cupcake.png" alt="" style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Cupcakes</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Mas worth it pa, kesa sa kanya!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱80</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk16" type="checkbox" name="products" />
+                                    <label for="chk16">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/mangoCake.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Mango Cake</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">MANGOgulat ka sa sarap</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱150</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk17" type="checkbox" name="products" />
+                                    <label for="chk17">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/grahamCake.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Graham Cake</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Mas sweet pa kesa sa jowa mo</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk18" type="checkbox" name="products" />
+                                    <label for="chk18">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/garlicRicePlatter.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Garlic Rice Platter</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Kahit walang, ulam pwede na!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱60</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk19" type="checkbox" name="products" />
+                                    <label for="chk19">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/plainRicePlatter.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Plain Rice Platter</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0;">Masarap parin ang normal!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk20" type="checkbox" name="products" />
+                                    <label for="chk20">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM -->
+                <div class="panel d-flex flex-column justify-content-center surface"
+                    style="width: 330px; border-radius: 7px; overflow: hidden;">
+                    <!-- COLUMN 1 -->
+                    <div>
+                        <!--  CONTENTS -->
+                        <div class="d-flex flex-row justify-content-between align-items-center"
+                            style="gap: 17px; padding: 17px;">
+                            <!-- IMAGE -->
+                            <div class="">
+                                <img src="resources/menu/friedRicePlatter.png" alt=""
+                                    style="width: 112px; border-radius: 7px;">
+                            </div>
+                            <!-- DETAILS -->
+                            <div class="">
+                                <div class="d-flex flex-column justify-content-between align-items-start">
+                                    <!-- TITLE -->
+                                    <div>
+                                        <h4 style="margin:0;">Fried Rice Platter</h4>
+                                    </div>
+                                    <!-- DESCR -->
+                                    <div>
+                                        <p style="word-wrap: break-word; margin: 0; word-break: break-all">Malasa at
+                                            malinamnam!</p>
+                                    </div>
+                                    <!-- PRICE -->
+                                    <div class="tertiary-container d-flex flex-row"
+                                        style="padding: 4px; border-radius: 7px;">
+                                        <span class="price">₱55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="d-flex flex-row justify-content-center"
+                            style="padding: 7px; background-color: #E0E0E0;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <input id="chk21" type="checkbox" name="products" />
+                                    <label for="chk21">Add to Tray</label>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- MARGIN -->
+    <div style="margin-top: 27px;"></div>
+
+    <!--  -->
+    <div class="secondary-container" style="padding-top: 27px; padding-bottom: 27px;">
+        <div class="container">
+            <main>
+                <div class=" d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Billing address</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6 ">
+                                    <label for="firstName" class="form-label ">First name</label>
+                                    <input type="text" class="form-control " id="firstName" placeholder="" value=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Contact Number</label>
+                                    <input type="email" class="form-control" id="email" placeholder="09XX XXX XXXX">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address" class="form-label">House No. | Street | District | Blg.
+                                        No.</label>
+                                    <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address2" class="form-label">Barangay </label>
+                                    <input type="text" class="form-control" id="address2"
+                                        placeholder="Enter your Barangay">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address2" class="form-label">Municipality | City </label>
+                                    <input type="text" class="form-control" id="address2"
+                                        placeholder="Enter your Municipality or City">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address2" class="form-label">Province | State </label>
+                                    <input type="text" class="form-control" id="address2"
+                                        placeholder="Enter your Province or State">
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="zip" class="form-label">Zip Code</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+
+                            <button class="w-100 btn btn-primary btn-lg" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Submit My Orders</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content" style="color: #1a1c19;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Order Succesfull!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for ordering! Please keep your lines available, so our staff can reach you when your
+                        order is out for delivery.
+                        Check your email and message inbox for your order details. Thank you!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" type="button" class="btn btn-secondary">Return to Home Page</a>
+                    <a href="order.html" type="button" class="btn btn-primary">Order Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        FOOTER
+    -->
+    <div class="background" style="padding-top: 27px; padding-bottom: 27px; background-image: url(https://www.transparenttextures.com/patterns/shley-tree-1.png);">
+        <!-- Holds contents to center -->
+        <div class=" container">
+            <!-- Divide vertically -->
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <!--ROW 1-->
+                <img src="resources/logo.png" alt="" style="height: 69px;">
+                <!--ROW 2-->
+                <!-- Wrap Divide Horizontal -->
+                <div class=" d-flex flex-row justify-content-center flex-wrap"
+                    style="column-gap: 27px; row-gap: 17px; margin-top: 27px; margin-bottom: 7px;">
+                    <!-- COLUMN 1 -->
+                    <div class="d-flex flex-column align-items-ceter">
+                        <h4>Menu</h4>
+                        <a href="promos.html">Promos</a>
+                        <a href="menu.html">View All Items</a>
+                    </div>
+                    <!-- COLUMN 2 -->
+                    <div class="d-flex flex-column align-items-start">
+                        <h4>Services</h4>
+                        <a href="services.html">Franchising</a>
+                        <a href="services.html">Delivery</a>
+                        <a href="services.html">Merch</a>
+                    </div>
+                    <!-- COLUMN 3 -->
+                    <div class="d-flex flex-column align-items-start">
+                        <h4>About Us</h4>
+                        <a href="about.html">Developers</a>
+                        <a href="about.html">Our Mission</a>
+                    </div>
+                    <!-- COLUMN 4 -->
+                    <div class="d-flex flex-column align-items-start">
+                        <h4>Follow Us</h4>
+                        <div class=" d-flex flex-row justify-content-center flex-wrap"
+                            style="column-gap: 7px; row-gap: 17px; ">
+                            <a href="https://www.facebook.com/manginamerz" target="blank" class="d-flex">
+                                <img src="resources/facebook.png" alt="" style="height: 27px;">
+                            </a>
+                            <a href="https://www.instagram.com/mang_inamerz/" target="blank" class="d-flex">
+                                <img src="resources/instagram.png" alt="" style="height: 27px;">
+                            </a>
+                            <a href="https://twitter.com/mang_inamerz" target="blank" class="d-flex">
+                                <img src="resources/twitter.png" alt="" style="height: 27px;">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ROW 3 -->
+                <p style="margin-top: 17px; opacity: 0.5; text-align: center;">© 2022 Mang Inamerz Corporation. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <audio autoplay loop id="audio">
+        <source src="resources/musicOrder.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        var vid = document.getElementById("audio");
+        vid.volume = 0.3;
+    </script>
+
+    <!-- SCRIPT FOR ORDER -->
+    <script>
+        var checkOptions = {
+            id: "",
+            checkedGlyph: "glyphicon-ok-circle",
+            uncheckedGlyph: "glyphicon-unchecked",
+            checkedBtnClass: "btn-success",
+            uncheckedBtnClass: "btn-primary",
+            checkedText: "Added",
+            uncheckedText: "Add to Tray"
+        };
+
+        var totalOptions = {
+            id: "#total",
+            priceClass: ".price",
+            priceContainerClass: ".panel"
+        }
+
+        $(document).ready(function () {
+            $("[type='checkbox']").on('change', function () {
+                if ($(this).prop('checked')) {
+                    setChecked($(this));
+                } else {
+                    setUnchecked($(this));
+                }
+
+                calculateTotal($(this));
+            });
+
+            var checked = $(checkOptions.id + " .btn-group input:checked");
+            setChecked(checked);
+
+            for (var i = 0; i < checked.length; i++) {
+                setChecked($(checked[i]));
+                calculateTotal($(checked[i]));
+            }
+
+            $("input:checked").prev()
+                .removeClass('glyphicon-unchecked')
+                .addClass('glyphicon-ok-circle');
+            $("input:checked").parent()
+                .addClass('active')
+
+            function setChecked(ctl) {
+                $(ctl).prev()
+                    .removeClass(checkOptions.uncheckedGlyph)
+                    .addClass(checkOptions.checkedGlyph);
+                $(ctl).parent()
+                    .removeClass(checkOptions.uncheckedBtnClass)
+                    .addClass(checkOptions.checkedBtnClass);
+                $(ctl).next().text(checkOptions.checkedText);
+            }
+
+            function setUnchecked(ctl) {
+                $(ctl).prev()
+                    .removeClass(checkOptions.checkedGlyph)
+                    .addClass(checkOptions.uncheckedGlyph);
+                $(ctl).parent()
+                    .removeClass(checkOptions.checkedBtnClass)
+                    .addClass(checkOptions.uncheckedBtnClass);
+                $(ctl).next().text(checkOptions.uncheckedText);
+            }
+
+            //The following function defaults the optional parameters of symbol and separator to USD format
+            function stripCurrency(value, symbol, separator) {
+                symbol = (typeof symbol == 'undefined' ? '₱' : symbol);
+                separator = (typeof separator == 'undefined' ? ',' : separator);
+
+                value = value.replace(symbol, "")
+                    .replace(separator, "")
+                    .replace(" ", "");
+                return value;
+            }
+
+            //The following function breaks the number into an array based on where the decimal point is, create currency with the separator, then join them together with the $ symbol and number after decimal
+            function formatCurrency(value, decimals, decpoint, separator, symbol) {
+                decimals = (typeof decimals == 'undefined' ? 2 : decimals);
+                decpoint = (typeof decpoint == 'undefined' ? '.' : decpoint);
+                separator = (typeof separator == 'undefined' ? ',' : separator);
+                symbol = (typeof symbol == 'undefined' ? '₱' : symbol);
+
+                var parts = value.toFixed(decimals).toString().split(decpoint);
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+                return (symbol + parts.join(decpoint)).toLocaleString();
+            };
+
+            function calculateTotal(ctl) {
+                var total = $(totalOptions.id).text();
+
+                total = stripCurrency(total);
+
+                var price = $(ctl).closest(totalOptions.priceContainerClass).find(totalOptions.priceClass).text();
+
+                price = stripCurrency(price);
+
+                if ($(ctl).prop("checked")) {
+                    // Add to total
+                    total = parseFloat(total) + parseFloat(price);
+                } else {
+                    //Subtract from total, add to total
+                    total = parseFloat(total) - parseFloat(price);
+                }
+
+                $(totalOptions.id).text(formatCurrency(total));
+            };
+        });
+    </script>
+
+    <!-- SCRIPT FOR MODAL CONFIRMATION -->
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT FOR TIME -->
+    <script>
+        window.onload = function () {
+            clock();
+            function clock() {
+                var now = new Date();
+                var TwentyFourHour = now.getHours();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+                var mid = 'pm';
+                if (min < 10) {
+                    min = "0" + min;
+                }
+                if (hour > 12) {
+                    hour = hour - 12;
+                }
+                if (hour == 0) {
+                    hour = 12;
+                }
+                if (TwentyFourHour < 12) {
+                    mid = 'am';
+                }
+                document.getElementById('currentTime').innerHTML = hour + ':' + min + ' ' + mid;
+                setTimeout(clock, 1000);
+            }
+        }
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
+</body>
+
+</html>

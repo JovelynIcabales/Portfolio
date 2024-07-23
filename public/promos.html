@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Grandstander Font font-family: 'Grandstander', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fira Sans font-family: 'Fira Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="AllenPreset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promos | Mang Inamerz</title>
+    <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+</head>
+
+<body class="primary" onload="startTime()" style="background-image: url(https://www.transparenttextures.com/patterns/brick-wall.png)">
+
+    <!-- 
+        HEADER/NAV
+     -->
+     <nav class=" navbar navbar-expand-lg fixed-top navbar-dark primary" aria-label="Ninth navbar example"
+    style="min-height: 69px; font-family: 'Grandstander', cursive; background-image: url(https://www.transparenttextures.com/patterns/xv.png);">
+    <div class="container-xl">
+        <a class="navbar-brand" href="index.html"> <img src="resources/logo.png" alt="" style="height: 43px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+            aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-items-center" id="navbarsExample07XL">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="menu.html" id="dropdown07XL"
+                        data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+                        <li><a class="dropdown-item" href="promos.html">Promos</a></li>
+                        <li><a class="dropdown-item" href="menu.html">View All Items</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+            <div class="d-flex flex-row align-items-center" style="column-gap: 12px; row-gap: 12px; opacity: 0.6;">
+                <div id="date"></div>
+                <div id="currentTime"></div>
+            </div>
+
+        </div>
+    </div>
+    </nav>
+
+    <!--
+        MENU
+    -->
+    <div class="d-flex flex-column" style="margin-top: 69px; row-gap: 27px; margin-bottom: 27px;">
+        <!-- PROMOS -->
+        <h1 id="promos" style="margin-top: 27px;" class="container d-flex flex-row justify-content-center">PROMOS!
+        </h1>
+        <!-- CATEGORY -->
+        <div class="surface container" style="width: 95%; border-radius: 7px; border-top: 7px solid #D50000;">
+            <div class="d-flex flex-column align-items-center" style="padding: 27px;">
+                <h3>Regular Promos</h3>
+                <div class=" d-flex flex-row justify-content-center flex-wrap" style="column-gap: 27px; row-gap: 17px;">
+                    <!-- Promo 1 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/m1Meal.png); background-size: cover;"> </div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">M1 Meal</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Mas sulit pa sa pag-aantay sa crush
+                                    mo! (1 Fried Rice + 1 Royal + Tuna Sisig) </p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱185</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 2 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/m2Meal.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">M2 Meal</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Mas worthy pa kaysa sa ex mo! (1
+                                    Garlic Rice + 1 sprite + 1 Pork Sisig)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱210</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 1 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/m3Meal.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">M3 Meal</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Makaklipad ka sa sarap! (1 Plain
+                                    Rice + 1 Coke + 1 Pakpak Large)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱280</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start"
+                    style="font-family: 'Grandstander', cursive;">
+                    <a href="order.html" class="btn btn-primary btn-lg px-4 me-md-2 primary">Order Now!</a>
+                    <a href="menu.html"><button type="button"
+                            class="btn btn-outline-secondary btn-lg px-4 secondary">View Menu</button></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- CATEGORY -->
+        <div class="surface container" style="width: 95%; border-radius: 7px; border-top: 7px solid #FF3D00;">
+            <div class="d-flex flex-column align-items-center" style="padding: 27px;">
+                <h3>Special Promos</h3>
+                <div class=" d-flex flex-row justify-content-center flex-wrap" style="column-gap: 27px; row-gap: 17px;">
+                    <!-- Promo 1 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/wadBundleMeals.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">WAD Bundle Meals</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Makakapag code ka sa sarap! (2
+                                    Pecho Large + 1 Bangus Sisig + 1 Mango Cake + Free 1 Royal)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱815</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 2 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/bestfriendMeals.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">Best Friend Meals</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Pagkain para tumatag ang samahan!
+                                    (2 Fried Rice + 1 Tuna Sisig + 1 Pakpak Large + 2 sprite)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱470</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 3 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/coupleMeals.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">Couple Meals</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Unang Tikim, maniniwala ka na sa
+                                    forever! (2 Fried Rice + 1 Pork Sisig + 1 Paa Large + 2 Sprite + 1 Graham)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱690</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 4 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/loveableMeals.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">Loveable Meal</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Maniniwala ka sa forever kapag nakain mo ito! (1 Pecho Large + 1 Plain Rice + 1 Coke)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱360</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 5 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/onlineClassMeals.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">Online Class Meals</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Unang tikim, tatalino ka ka-agad! (1 Garlic Rice + 1 Tuna Sisig + 1 Coke)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱190</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 6 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/familySisigBox.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">Family Sisig Box</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">SISIGla ang pagmamahalan ng pamilya sa unang tikim! (1 Pork + 1 Bangus + 1 Tuna Sisig + Free Mango Cake)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱410</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Promo 7 -->
+                    <div class="  d-flex flex-column align-items-center" style="width: 294px;">
+                        <div class="primary-container" style="width: 294px; height: 294px; border-radius: 17px; background-image: url(resources/promos/barkadaChickenBox.png); background-size: cover;"></div>
+                        <div class=" d-flex flex-row justify-content-center" style="margin-top: 7px;">
+                            <div class="  d-flex flex-column" style="width: 80%;">
+                                <h4 style="margin-bottom: 2px;">Barkada Chicken Box</h4>
+                                <p style="word-wrap: break-word; line-height: 17px;">Pagkain ng buong tropang nagtutulungan! (Paa + Pecho + Pakpak Large + Free Cupcake)</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center style=" width: 20%; height:
+                                100%;">
+                                <h2>₱780</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BUTTON -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start"
+                    style="font-family: 'Grandstander', cursive;">
+                    <a href="order.html" class="btn btn-primary btn-lg px-4 me-md-2 primary">Order Now!</a>
+                    <a href="menu.html"><button type="button"
+                            class="btn btn-outline-secondary btn-lg px-4 secondary">View Menu</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--
+        FOOTER
+    -->
+    <div class="background" style="padding-top: 27px; padding-bottom: 27px; background-image: url(https://www.transparenttextures.com/patterns/shley-tree-1.png); ">
+        <!-- Holds contents to center -->
+        <div class=" container">
+            <!-- Divide vertically -->
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <!--ROW 1-->
+                <img src="resources/logo.png" alt="" style="height: 69px;">
+                <!--ROW 2-->
+                <!-- Wrap Divide Horizontal -->
+                <div class=" d-flex flex-row justify-content-center flex-wrap"
+                    style="column-gap: 27px; row-gap: 17px; margin-top: 27px; margin-bottom: 7px;">
+                    <!-- COLUMN 1 -->
+                    <div class="d-flex flex-column align-items-ceter">
+                        <h4>Menu</h4>
+                        <a href="#promos">Promos</a>
+                        <a href="menu.html">View All Items</a>
+                    </div>
+                    <!-- COLUMN 2 -->
+                    <div class="d-flex flex-column align-items-start">
+                        <h4>Services</h4>
+                        <a href="services.html">Franchising</a>
+                        <a href="services.html">Delivery</a>
+                        <a href="services.html">Merch</a>
+                    </div>
+                    <!-- COLUMN 3 -->
+                    <div class="d-flex flex-column align-items-start">
+                        <h4>About Us</h4>
+                        <a href="about.html">Developers</a>
+                        <a href="about.html">Our Mission</a>
+                    </div>
+                    <!-- COLUMN 4 -->
+                    <div class="d-flex flex-column align-items-start">
+                        <h4>Follow Us</h4>
+                        <div class=" d-flex flex-row justify-content-center flex-wrap"
+                            style="column-gap: 7px; row-gap: 17px; ">
+                            <a href="https://www.facebook.com/manginamerz" target="blank" class="d-flex">
+                                <img src="resources/facebook.png" alt="" style="height: 27px;">
+                            </a>
+                            <a href="https://www.instagram.com/mang_inamerz/" target="blank" class="d-flex">
+                                <img src="resources/instagram.png" alt="" style="height: 27px;">
+                            </a>
+                            <a href="https://twitter.com/mang_inamerz" target="blank" class="d-flex">
+                                <img src="resources/twitter.png" alt="" style="height: 27px;">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ROW 3 -->
+                <p style="margin-top: 17px; opacity: 0.5; text-align: center;">© 2022 Mang Inamerz Corporation. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AUDIO -->
+
+
+    <audio autoplay loop id="audio">
+        <source src="resources/musicOther.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        var vid = document.getElementById("audio");
+        vid.volume = 0.3;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT FOR TIME -->
+    <script>
+        window.onload = function () {
+            clock();
+            function clock() {
+                var now = new Date();
+                var TwentyFourHour = now.getHours();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+                var mid = 'pm';
+                if (min < 10) {
+                    min = "0" + min;
+                }
+                if (hour > 12) {
+                    hour = hour - 12;
+                }
+                if (hour == 0) {
+                    hour = 12;
+                }
+                if (TwentyFourHour < 12) {
+                    mid = 'am';
+                }
+                document.getElementById('currentTime').innerHTML = hour + ':' + min + ' ' + mid;
+                setTimeout(clock, 1000);
+            }
+        }
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
+</body>
+
+</html>
