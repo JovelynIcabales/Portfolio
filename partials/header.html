@@ -1,0 +1,132 @@
+<style>
+    header{
+        height: 85px;
+    }
+    nav{
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        z-index: 1000;
+        background-color: #fff; 
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #D9D9D9;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .nav-container img{
+        border-radius: 4px;;
+        margin-left: 25px;
+        width: 150px;
+        height: 71px;
+    }
+    .nav-container .nav-list{
+        display: flex;
+    }
+    .nav-container .nav-items{
+        padding: 15px 0;
+        margin: 0 25px;
+        list-style: none;  
+    }
+    .nav-container a{
+        text-decoration:none;
+        font-size: 18px;
+        color: #333;
+    }
+    .nav-container a:hover{
+        font-weight: bold;
+    }
+    .nav-container .button{
+        background-color: #004E89;
+        border-radius: 5px;
+        border-bottom-right-radius: 25px;
+        color: #F5F5F5;
+        padding: 10px 25px
+    }
+    .nav-container .button:hover {
+        font-weight: normal;
+        background-color: #1A659E; /* Change color on hover */
+    }
+    .nav-container .button:active {
+        background-color: #1a659edc; /* Change color on click */
+    }
+    .menu-button{
+        font-size: 30px;
+        display: flex;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+    .hide-web{
+        display: none;
+    }
+    @media (max-width: 1225px) {
+    .hide-web{
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .nav-container{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .sideNav-container {
+        width: 100%;
+        z-index: 99999;
+        display: none;
+        padding: 20px 0;
+        background-color: #fff;
+    }
+    .sideNav-container span{
+        font-size: 30px;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+    .sideNav-container .nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .sideNav-container .nav-items a{
+        text-decoration: none;
+        color: #333;
+    }
+    .sideNav-container .nav-items a:hover{
+        font-weight: bold;
+    }
+    .nav-container img{
+        margin-left: 0px;
+    }
+}
+</style>
+<header>
+    <nav>
+        <div class="nav-container">
+            <a href="#home"><img src="../assets/logo.jpg" alt="logo"></a>
+            <ul class="nav-list hide-mobile">
+                <li class="nav-items hide-mobile"><a href="#about">about</a></li>
+                <li class="nav-items hide-mobile"><a href="#project">project</a></li>
+                <li class="nav-items hide-mobile"><a class="button" href="#contact">contact me</a></li>
+            </ul>
+            <span class="menu-button hide-web" onclick="showSidebar()">&#9776;</span>
+        </div>
+        <div class="sideNav-container hide-web">
+            <span onclick="hideSidebar()">&#x2716;</span>
+            <ul class="nav-list">
+                <li class="nav-items"><a href="#about">about</a></li>
+                <li class="nav-items"><a href="#project">project</a></li>
+                <li class="nav-items"><a class="button" href="#contact">contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

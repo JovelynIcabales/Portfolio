@@ -1,0 +1,226 @@
+<style>
+.main-contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact-wrapper {
+    text-align: center;
+    width: calc(100% - 20px);
+    position: relative;
+}
+.contact-wrapper h2{
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-icons, .contact-box {
+    flex: 1 1 300px; /* Flex grow, shrink, and basis */
+    max-width: 100%; /* Ensure it doesn't overflow its container */
+}
+.contact-icons ul {
+    list-style: none; /* Remove default list styling */
+    padding: auto 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-icons li{
+    display: flex;
+    align-items: center;
+}
+.contact-icons a{
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+
+}
+.contact-icons img {
+    padding: 10px 0;
+    width: 40px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
+}
+.contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-icons li:hover{
+    cursor: pointer;
+}
+.contact-box form{
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    width: 75%; /* Full width of the container */
+}
+.contact-box input,
+.contact-box textarea {
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.contact-box textarea{
+    height: 300px;
+}
+.contact-box button{
+    border: none;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    background-color: #004E89;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px 0;
+}
+.contact-box button:hover{
+    background-color: #1A659E;
+}
+.contact-box button:active {
+    background-color: #1a659edc;
+}
+.contact-image img{
+    position: absolute;
+    width: 500px;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+@media (min-width: 600px) and (max-width: 1255px) {
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .contact-box form{
+        width: 100%;
+    }
+    .contact-box input,
+    .contact-box textarea{
+        width: 90%;
+    }
+    .contact-icons{
+        width: 90%;
+    }
+    .contact-icons ul{
+        padding: 0;
+    }
+    .contact-icons img{
+        margin: 0;
+    }
+    .contact-icons a{
+        margin-left: 5px;
+    }
+    .contact-wrapper{
+        position: relative;
+    }
+    .contact-image img{
+        position: absolute;
+        right: 0;
+        width: 400px;
+        bottom: 0;
+        z-index: 0;
+        opacity: 0.1;
+        transform: scaleX(-1);
+    }
+}
+@media (max-width: 600px){
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .contact-box form{
+        width: 100%;
+    }
+    .contact-box input,
+    .contact-box textarea{
+        width: 90%;
+    }
+    .contact-icons{
+        width: 90%;
+    }
+    .contact-icons ul{
+        padding: 0;
+    }
+    .contact-icons img{
+        margin: 0;
+    }
+    .contact-icons a{
+        margin-left: 5px;
+    }
+    .contact-image img{
+        width: 300px;
+        bottom: 0;
+        z-index: 0;
+        opacity: 0.1;
+    }
+}
+</style>
+<div class="main-contact">
+    <div class="contact-wrapper">
+        <h2 id="contact">get to know me</h2>
+        <div class="contact-container">
+            <div class="contact-icons">
+                <ul>
+                    <li class="contact-icon">
+                        <img src="../assets/facebook.png" alt="fb">
+                        <a href="https://www.facebook.com/Jsicabales/">Facebook</a>
+                    </li>
+                    <li class="contact-icon">
+                        <img src="../assets/linkedin.png" alt="linkedin">
+                        <a href="https://www.linkedin.com/in/jsicabales/">LinkedIn</a>
+                    </li>
+                    <li class="contact-icon">
+                        <img src="../assets/email.png" alt="email">
+                        <a href="mailto:icabalessolengjovelyn@gmail.com">icabalessolengjovelyn@gmail.com</a>
+                    </li>
+                    <li class="contact-icon">
+                        <img src="../assets/phone-call.png" alt="phone">
+                        <a href="#">09360835197</a>
+                    </li>
+                    <li class="contact-image">
+                        <img src="../assets/icons/Tech Life - Communication.png" alt="tech-communiaction">
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-box">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="167d17a9-8096-48e7-9967-d36665230df7">
+                <!-- name -->
+                    <input type="text" id="uname" name="uname" placeholder="your name" required>
+                <!-- email -->
+                    <input type="email" id="email" name="email" placeholder="your email" required>
+                <!-- subject -->
+                    <input type="text" id="subject" name="subject" placeholder="subject" required>
+                <!-- messsage -->
+                    <textarea type="message" id="message" name="message" placeholder="your message" required></textarea>
+                <!-- button submit -->
+                    <button type="submit">submit<img src="../assets/submit.png" alt="submit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
