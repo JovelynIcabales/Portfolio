@@ -77,13 +77,18 @@ html {
 /* about-section */
 .about-section{
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 .about-section h2{
   text-transform: capitalize;
+}
+.about-section p{
+  text-align: center;
+  line-height: 23px;
+  margin: 0 10px;
 }
 
 /* project-section */
@@ -156,7 +161,8 @@ html {
   height: 25px;
   transition: .5s ease;
   opacity:0;
-  font-size: 18px;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 .container1:hover .overlay,
 .container2:hover .overlay,
@@ -176,7 +182,7 @@ html {
   top: 120px;
   margin: 5px;
   height: 30px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -303,10 +309,16 @@ html {
   .about-section p{
     padding: 20px, 0;
   }
+  .about-section p{
+    font-size: 1rem;
+  }
   .project-section .proj-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .project-section p{
+    font-size: 1rem;
   }
   .popup-video video{
     width: 100%;
