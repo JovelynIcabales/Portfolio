@@ -4,15 +4,15 @@ const videos = document.querySelectorAll('.popup-video');
 
 // header and footer
 $(document).ready(function() {
-    $.get("partials/header.html", function(data) {
+    $.get("header.html", function(data) {
         $("#header").html(data);
     });
 
-    $.get("partials/footer.html", function(data) {
+    $.get("footer.html", function(data) {
         $("#footer").html(data);
     });
 
-    $.get("partials/contact.html", function(data) {
+    $.get("contact.html", function(data) {
         $("#contact").html(data);
     });
 });
