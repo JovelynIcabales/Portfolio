@@ -254,6 +254,75 @@ html {
   }
 }
 
+@media (min-width: 1260px) and (max-width: 1400px){
+  html, body {
+    max-width: 90%;
+  }
+  /* hero*/
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 85vh;
+  }
+  .hero-section img{
+    width: 350px;
+    border-radius: 20px;
+    order: 2;
+    /* shadow-pop animation */
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+  .hero-text{
+    margin-left: 20px;
+    text-transform: capitalize;
+    order: 1;
+    line-height: 60px;
+    text-align: left;
+  }
+  .hero-text h1{
+    margin: 0;
+    font-size: 50px;
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #252525;
+    line-height:100%;
+  }
+  .hero-text p{
+    margin: 0;
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .hero-text p span{
+    text-decoration: dotted underline;
+    color: #004E89;
+    font-weight: 300;
+  }
+  .hero-text button{
+    background-color: #252525;
+    border: none;
+    border-radius: 8px;
+    color: #f1f1f1;
+    width: 140px;
+    padding: 10px 24px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .hero-text button:hover{
+    background-color: #333333;
+    color: #f1f1f1;
+    border-color: #f1f1f1;
+    cursor: pointer;
+  }
+  .hero-text button:active{
+    background-color: #1a1a1a;
+    cursor: pointer;
+  }
+
+}
 
 @media (min-width: 600px) and (max-width: 1255px){
   html, body {
